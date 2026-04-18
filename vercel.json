@@ -1,0 +1,22 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/beauty", "dest": "/beauty.html" },
+    { "src": "/book-appointment", "dest": "/book-appointment.html" },
+    { "src": "/contact", "dest": "/contact.html" },
+    { "src": "/creatives", "dest": "/creatives.html" },
+    { "src": "/fashion", "dest": "/fashion.html" },
+    { "src": "/feedback", "dest": "/feedback.html" },
+    { "src": "/login", "dest": "/login.html" },
+    { "src": "/model-profile", "dest": "/model-profile.html" },
+    { "src": "/model-profile2", "dest": "/model-profile2.html" },
+    { "src": "/model", "dest": "/model.html" },
+    { "src": "/my-bookings", "dest": "/my_bookings.html" },
+    { "src": "/rankings", "dest": "/rankings.html" },
+    { "src": "/signup", "dest": "/signup.html" },
+    { "src": "/thankyou", "dest": "/thankyou.html" }
+  ]
+}

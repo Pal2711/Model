@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fashion - Models</title>
+  <link rel="icon" type="image/png" href="img/logo.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/cursor-effect.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div id="scroll-progress-container">
+    <a href="javascript:void(0)" id="scroll-progress-link">
+      <div id="scroll-progress-bar"></div>
+    </a>
+  </div>
+
+ <div class="main-header-section">
+    <div class="navbar">
+      <!-- Left Logo -->
+      <a href="index.html">
+        <!-- ✅ IMPORTANT: id added -->
+        <div class="logo" id="navLogo">
+          models<span>.</span>
+        </div>
+      </a>
+
+      <!-- Main Menu -->
+      <ul class="menu">
+
+        <li class="menu-sub-class"><a href="model.html">Models.</a><span class="menu-icon-cls">|</span></li>
+        <li class="menu-sub-class"><a href="creatives.html">Creatives.</a><span class="menu-icon-cls">|</span></li>
+        <li class="menu-sub-class"><a href="fashion.html">Fashion.</a><span class="menu-icon-cls">|</span></li>
+        <li class="menu-sub-class"><a href="beauty.html">Beauty.</a><span class="menu-icon-cls">|</span></li>
+        <li class="menu-sub-class"><a href="my_bookings.html">Booking</a><span class="menu-icon-cls">|</span></li>
+        <li class="menu-sub-class"><a href="about.html">About</a></li>
+
+      </ul>
+
+      <!-- Right Section -->
+      <div class="login-section">
+        <a href="login.html">Login</a>
+      </div>
+
+    </div>
+    <hr>
+  </div>
+
+  <header class="page-header">
+    <h1>Fashion</h1>
+  </header>
+
+  <!-- IMAGE SECTION -->
+  <section class="creative-section">
+    <div class="container">
+      <div class="creative-image">
+        <img src="img/Fashion.jpg" alt="Fashion">
+      </div>
+    </div>
+  </section>
+
+  <section class="editorial-section">
+    <div class="container">
+      <div class="editorial-titel">
+        <h3>
+          Industry Access: Vanessa</br>
+          Friedman and Rachel Scott
+        </h3>
+      </div>
+      <div class="row">
+        <div class="col">
+          <article class="card1">
+            <img src="img/Fashioncard1.jpg" alt="">
+            <span class="tag">Interviews</span>
+            <h3>How Cinema Shaped Photographer Sonia Szóstak’s Visual Language</h3>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card1">
+            <img src="img/Fashioncard2.jpg" alt="">
+            <span class="tag">Interviews</span>
+            <h3>Style Director Ronald Burton’s Vision of Fashion as Theatre</h3>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card1">
+            <img src="img/Fashioncard3.jpg" alt="">
+            <span class="tag">Interviews</span>
+            <h3>Stylist Marc Goehring Breaks Down Berlin’s Creative Pulse</h3>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card1">
+            <img src="img/Fashioncard4.jpg" alt="">
+            <span class="tag">News</span>
+            <h3>Models.com Looks Back At the Faces and Forces That Defined the Year</h3>
+          </article>
+        </div>
+      </div>
+
+      <!-- NEXT ROW -->
+      <div class="row">
+        <div class="col">
+          <article class="card1">
+            <img src="img/Fashioncard5.jpg" alt="">
+            <span class="tag">News</span>
+            <h3>Pat Boguslawski’s Next Act Takes The Camera In His Hands</h3>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card1">
+            <img src="img/Fashioncard6.jpg" alt="">
+            <span class="tag">Fashion</span>
+            <h3>Stylist Ian Bradley on Finding Glamour in the Everyday</h3>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card1">
+            <img src="img/Fashioncard7.jpg" alt="">
+            <span class="tag">Interviews</span>
+            <h3>Casting Director Liz Goldson Sees What Others Miss</h3>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card1">
+            <img src="img/Fashioncard8.jpg" alt="">
+            <span class="tag">Beauty</span>
+            <h3>Hairstylist Pawel Solis Finds the Beauty in Simplicity</h3>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--Discover Models section start-->
+  <section class="discover-section">
+    <!-- Container added -->
+    <div class="container">
+      <!-- Discover Models -->
+      <div class="discover-column" id="models">
+        <div class="discover-header">
+          <h2>Discover Models</h2>
+        </div>
+
+        <ul class="discover-list row">
+          <li class="discover-item col-lg-2 col-md-4 col-sm-6 col-12">
+            <div class="item-inner">
+              <img src="img/charleenweiss9.jpg" alt="Charleen Weiss" class="open-img"
+                onclick="openLightbox(this.src)">
+              <div class="discover-list-text">
+                <h4>Charleen<br> Weiss</h4>
+                <h2>Actress</h2>
+              </div>
+            </div>
+          </li>
+          <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img">
+          </div>
+
+          <li class="discover-item col-lg-2 col-md-4 col-sm-6 col-12">
+            <div class="item-inner">
+              <img src="img/dwayne-johnson.jpg" alt="Dwayne Johnson" class="open-img"
+                onclick="openLightbox(this.src)">
+              <div class="discover-list-text">
+                <h4>Dwayne
+                  <br> Johnson
+                </h4>
+                <h2>Actor</h2>
+              </div>
+            </div>
+          </li>
+          <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img">
+          </div>
+
+          <li class="discover-item col-lg-2 col-md-4 col-sm-6 col-12">
+            <div class="item-inner">
+              <img src="img/hailee-steinfeld4.jpg" alt="hailee steinfeld" class="open-img"
+                onclick="openLightbox(this.src)">
+              <div class="discover-list-text">
+                <h4>hailee<br> steinfeld</h4>
+                <h2>Singer</h2>
+              </div>
+            </div>
+          </li>
+          <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img">
+          </div>
+
+          <li class="discover-item col-lg-2 col-md-4 col-sm-6 col-12">
+            <div class="item-inner">
+              <img src="img/Hrithikroshan10.jpeg" alt="Hrithik Roshan" class="open-img"
+                onclick="openLightbox(this.src)">
+              <div class="discover-list-text">
+                <h4>Hrithik<br> Roshan</h4>
+                <h2>Actor</h2>
+              </div>
+            </div>
+          </li>
+          <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img">
+          </div>
+
+          <li class="discover-item col-lg-2 col-md-4 col-sm-6 col-12">
+            <div class="item-inner">
+              <img src="img/hailey-baldwin8.jpg" alt="hailey baldwin" class="open-img"
+                onclick="openLightbox(this.src)">
+              <div class="discover-list-text">
+                <h4>hailey<br> baldwin</h4>
+                <h2>Model</h2>
+              </div>
+            </div>
+          </li>
+          <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img">
+          </div>
+
+
+          <li class="discover-item col-lg-2 col-md-4 col-sm-6 col-12">
+            <div class="item-inner">
+              <img src="img/harnaaz-kaur9.jpg" alt="harnaaz kaur" class="open-img"
+                onclick="openLightbox(this.src)">
+              <div class="discover-list-text">
+                <h4>harnaaz<br>
+                  kaur</h4>
+                <h2>Model</h2>
+              </div>
+            </div>
+          </li>
+          <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img">
+          </div>
+
+
+          <li class="discover-item col-lg-2 col-md-4 col-sm-6 col-12">
+            <div class="item-inner">
+              <img src="img/kaia-gerber6.jpg" alt="kaia gerber" class="open-img"
+                onclick="openLightbox(this.src)">
+              <div class="discover-list-text">
+                <h4>kaia
+                  <br>gerber
+                </h4>
+                <h2>Actress</h2>
+              </div>
+            </div>
+          </li>
+          <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img">
+          </div>
+
+
+          <li class="discover-item col-lg-2 col-md-4 col-sm-6 col-12">
+            <div class="item-inner">
+              <img src="img/kendall-jenner8.jpg" alt="kendall jenner" class="open-img"
+                onclick="openLightbox(this.src)">
+              <div class="discover-list-text">
+                <h4>kendall <br> jenner</h4>
+                <h2>Model</h2>
+              </div>
+            </div>
+          </li>
+          <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img">
+          </div>
+
+
+          <li class="discover-item col-lg-2 col-md-4 col-sm-6 col-12">
+            <div class="item-inner">
+              <img src="img/lili8.jpg" alt="lili Reinhart " class="open-img"
+                onclick="openLightbox(this.src)">
+              <div class="discover-list-text">
+                <h4>lili<br> Reinhart </h4>
+                <h2>Model</h2>
+              </div>
+            </div>
+          </li>
+          <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img">
+          </div>
+
+          <li class="discover-item col-lg-2 col-md-4 col-sm-6 col-12">
+            <div class="item-inner">
+              <img src="img/scarlett-johansson7.jpg" alt="scarlett johansson" class="open-img"
+                onclick="openLightbox(this.src)">
+
+              <div class="discover-list-text">
+                <h4>scarlett <br>johansson</h4>
+                <h2>Actress</h2>
+              </div>
+            </div>
+          </li>
+          <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img">
+          </div>
+
+
+          <!-- Lightbox -->
+          <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img">
+          </div>
+
+        </ul>
+
+        <a href="model.html" class="model-btn">Explore All Models</a>
+      </div>
+    </div>
+  </section>
+  <!--Discover Models section end-->
+
+  <!-- Footer Section Start -->
+  <footer class="model-footer">
+    <div class="footer-container">
+
+      <!-- Social Media -->
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Explore -->
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="rankings.html">Ranking</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+
+
+
+        </ul>
+      </div>
+
+      <!-- Inside the Industry -->
+      <div class="footer-col">
+        <h4>Inside the Industry</h4>
+        <ul>
+          <li><a href="model.html">Models</a></li>
+          <li><a href="creatives.html">Creatives</a></li>
+          <li><a href="fashion.html">Fashion</a></li>
+          <li><a href="beauty.html">Beauty</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Model Website. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <script src="js/main.js"></script>
+  <script src="js/cursor-effect.js"></script>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById("lightbox").style.display = "flex";
+      document.getElementById("lightbox-img").src = src;
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

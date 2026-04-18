@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Booking - Models</title>
+
+    <link rel="icon" type="image/png" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cursor-effect.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        /* =============================
+       NAVBAR FIX
+    ============================= */
+        .main-header-section {
+            background: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        /* =============================
+       PAGE WRAPPER
+    ============================= */
+        .mreg-wrapper {
+            padding: 40px 20px;
+            background: #f5f6fa;
+            min-height: 70vh;
+        }
+
+        .mreg-card {
+            margin: auto;
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .mreg-title {
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+        }
+
+        /* =============================
+       TABLE STYLING (PROPER)
+    ============================= */
+        .table-box {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 900px;
+        }
+
+        .table thead {
+            background: #111;
+            color: #fff;
+        }
+
+        .table th {
+            padding: 14px 12px;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 0.4px;
+            white-space: nowrap;
+        }
+
+        .table td {
+            padding: 13px 12px;
+            text-align: center;
+            font-size: 14px;
+            border-bottom: 1px solid #eee;
+            white-space: nowrap;
+        }
+
+        .table tbody tr {
+            transition: 0.25s ease;
+        }
+
+        .table tbody tr:hover {
+            background: #f8f9ff;
+        }
+
+        /* =============================
+       EMPTY STATE
+    ============================= */
+        .empty-box {
+            text-align: center;
+            padding: 70px 20px;
+            background: #fafafa;
+            border-radius: 14px;
+            border: 1px dashed #ddd;
+        }
+
+        .empty-box h4 {
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .empty-box p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* =============================
+       FOOTER
+    ============================= */
+        .model-footer {
+            margin-top: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress-container">
+        <a href="javascript:void(0)" id="scroll-progress-link">
+            <div id="scroll-progress-bar"></div>
+        </a>
+    </div>
+
+    <div class="main-header-section">
+        <div class="navbar">
+            <!-- Left Logo -->
+            <a href="index.html">
+                <!-- ✅ IMPORTANT: id added -->
+                <div class="logo" id="navLogo">
+                    models<span>.</span>
+                </div>
+            </a>
+
+            <!-- Main Menu -->
+            <ul class="menu">
+
+                <li class="menu-sub-class"><a href="model.html">Models.</a><span class="menu-icon-cls">|</span></li>
+                <li class="menu-sub-class"><a href="creatives.html">Creatives.</a><span class="menu-icon-cls">|</span>
+                </li>
+                <li class="menu-sub-class"><a href="fashion.html">Fashion.</a><span class="menu-icon-cls">|</span></li>
+                <li class="menu-sub-class"><a href="beauty.html">Beauty.</a><span class="menu-icon-cls">|</span></li>
+                <li class="menu-sub-class"><a href="my_bookings.html">Booking</a><span class="menu-icon-cls">|</span>
+                </li>
+                <li class="menu-sub-class"><a href="about.html">About</a></li>
+
+            </ul>
+
+            <!-- Right Section -->
+            <div class="login-section">
+                <a href="login.html">Login</a>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+
+    <!-- ================= BOOKING SECTION ================= -->
+    <div class="mreg-wrapper">
+        <div class="mreg-card">
+
+            <h2 class="mreg-title">My Bookings</h2>
+
+            <div class="table-box">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Model</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Date</th>
+                            <th>Download</th>
+                            <th>Time</th>
+                            <th>Booked On</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Gigi Hadid</td>
+                            <td>Dhruvi Patel</td>
+                            <td>dhruvi.patel01@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>20 Apr 2026</td>
+                            <td>
+                                <a href="#">
+                                    <img src="img/download_img.png" alt="Download"
+                                        style="width:30px; height:30px; object-fit:cover; cursor:pointer; transition:0.25s ease; vertical-align:middle;"
+                                        onmouseover="this.style.transform='scale(1.15)'"
+                                        onmouseout="this.style.transform='scale(1)'">
+                                </a>
+                            </td>
+                            <td>10:30 AM</td>
+                            <td>18 Apr 2026, 09:15 AM</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Kylie Jenner</td>
+                            <td>Dhruvi Patel</td>
+                            <td>dhruvi.patel01@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>22 Apr 2026</td>
+                            <td>
+                                <a href="#">
+                                    <img src="img/download_img.png" alt="Download"
+                                        style="width:30px; height:30px; object-fit:cover; cursor:pointer; transition:0.25s ease; vertical-align:middle;"
+                                        onmouseover="this.style.transform='scale(1.15)'"
+                                        onmouseout="this.style.transform='scale(1)'">
+                                </a>
+                            </td>
+                            <td>02:00 PM</td>
+                            <td>19 Apr 2026, 11:45 AM</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Gigi Hadid</td>
+                            <td>Dhruvi Patel</td>
+                            <td>dhruvi.patel02@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>25 Apr 2026</td>
+                            <td>
+                                <a href="#">
+                                    <img src="img/download_img.png" alt="Download"
+                                        style="width:30px; height:30px; object-fit:cover; cursor:pointer; transition:0.25s ease; vertical-align:middle;"
+                                        onmouseover="this.style.transform='scale(1.15)'"
+                                        onmouseout="this.style.transform='scale(1)'">
+                                </a>
+                            </td>
+                            <td>12:30 PM</td>
+                            <td>20 Apr 2026, 08:20 AM</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Kylie Jenner</td>
+                            <td>Dhruvi Patel</td>
+                            <td>dhruvi.patel03@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>28 Apr 2026</td>
+                            <td>
+                                <a href="#">
+                                    <img src="img/download_img.png" alt="Download"
+                                        style="width:30px; height:30px; object-fit:cover; cursor:pointer; transition:0.25s ease; vertical-align:middle;"
+                                        onmouseover="this.style.transform='scale(1.15)'"
+                                        onmouseout="this.style.transform='scale(1)'">
+                                </a>
+                            </td>
+                            <td>04:15 PM</td>
+                            <td>21 Apr 2026, 02:10 PM</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="model-footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h4>Social Media</h4>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="rankings.html">Ranking</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Inside the Industry</h4>
+                <ul>
+                    <li><a href="model.html">Models</a></li>
+                    <li><a href="creatives.html">Creatives</a></li>
+                    <li><a href="fashion.html">Fashion</a></li>
+                    <li><a href="beauty.html">Beauty</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Model Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cursor-effect.js"></script>
+    ```
+
+</body>
+
+</html>

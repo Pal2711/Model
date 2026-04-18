@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Models - Models</title>
+  <link rel="icon" type="image/png" href="img/logo.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/cursor-effect.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div id="scroll-progress-container">
+    <a href="javascript:void(0)" id="scroll-progress-link">
+      <div id="scroll-progress-bar"></div>
+    </a>
+  </div>
+
+  <div class="main-header-section">
+    <div class="navbar">
+      <!-- Left Logo -->
+      <a href="index.html">
+        <!-- ✅ IMPORTANT: id added -->
+        <div class="logo" id="navLogo">
+          models<span>.</span>
+        </div>
+      </a>
+
+      <!-- Main Menu -->
+      <ul class="menu">
+
+        <li class="menu-sub-class"><a href="model.html">Models.</a><span class="menu-icon-cls">|</span></li>
+        <li class="menu-sub-class"><a href="creatives.html">Creatives.</a><span class="menu-icon-cls">|</span></li>
+        <li class="menu-sub-class"><a href="fashion.html">Fashion.</a><span class="menu-icon-cls">|</span></li>
+        <li class="menu-sub-class"><a href="beauty.html">Beauty.</a><span class="menu-icon-cls">|</span></li>
+        <li class="menu-sub-class"><a href="my_bookings.html">Booking</a><span class="menu-icon-cls">|</span></li>
+        <li class="menu-sub-class"><a href="about.html">About</a></li>
+
+      </ul>
+
+      <!-- Right Section -->
+      <div class="login-section">
+        <a href="login.html">Login</a>
+      </div>
+
+    </div>
+    <hr>
+  </div>
+  <header class="page-header">
+    <h1>Models</h1>
+  </header>
+
+  <section class="feature-section">
+    <div class="feature-container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <a href="model-profile.html" style="text-decoration: none; color: inherit;">
+            <div class="feature-card"
+              style="border: 1px solid #ddd; padding: 15px; text-align: center; border-radius: 5px;">
+              <img src="img/gigi-hadid1.jpeg" alt="{{ profile.full_name }}"
+                style="width: 100%; height: 550px; object-fit: cover; border-radius: 5px;">
+              <h3 style="margin-top: 10px; font-size: 30px; ">Gigi-hadid</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="model-profile2.html" style="text-decoration: none; color: inherit;">
+            <div class="feature-card"
+              style="border: 1px solid #ddd; padding: 15px; text-align: center; border-radius: 5px;">
+              <img src="img/kendall-jenner2.jpg" alt="{{ profile.full_name }}"
+                style="width: 100%; height: 550px; object-fit: cover; border-radius: 5px;">
+              <h3 style="margin-top: 10px; font-size: 30px; ">kendall-jenner</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="model-footer">
+    <div class="footer-container">
+
+      <!-- Social Media -->
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Explore -->
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="rankings.html">Ranking</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+
+      <!-- Inside the Industry -->
+      <div class="footer-col">
+        <h4>Inside the Industry</h4>
+        <ul>
+          <li><a href="model.html">Models</a></li>
+          <li><a href="creatives.html">Creatives</a></li>
+          <li><a href="fashion.html">Fashion</a></li>
+          <li><a href="beauty.html">Beauty</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Model Website. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <script src="js/main.js"></script>
+  <script src="js/cursor-effect.js"></script>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById("lightbox").style.display = "flex";
+      document.getElementById("lightbox-img").src = src;
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

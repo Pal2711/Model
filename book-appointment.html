@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Booking - Models</title>
+    <link rel="icon" type="image/png" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cursor-effect.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="scroll-progress-container">
+        <a href="javascript:void(0)" id="scroll-progress-link">
+            <div id="scroll-progress-bar"></div>
+        </a>
+    </div>
+
+    <div class="main-header-section">
+        <div class="navbar">
+            <!-- Left Logo -->
+            <a href="index.html">
+                <!-- ✅ IMPORTANT: id added -->
+                <div class="logo" id="navLogo">
+                    models<span>.</span>
+                </div>
+            </a>
+
+            <!-- Main Menu -->
+            <ul class="menu">
+
+                <li class="menu-sub-class"><a href="model.html">Models.</a><span class="menu-icon-cls">|</span></li>
+                <li class="menu-sub-class"><a href="creatives.html">Creatives.</a><span class="menu-icon-cls">|</span>
+                </li>
+                <li class="menu-sub-class"><a href="fashion.html">Fashion.</a><span class="menu-icon-cls">|</span></li>
+                <li class="menu-sub-class"><a href="beauty.html">Beauty.</a><span class="menu-icon-cls">|</span></li>
+                <li class="menu-sub-class"><a href="my_bookings.html">Booking</a><span class="menu-icon-cls">|</span>
+                </li>
+                <li class="menu-sub-class"><a href="about.html">About</a></li>
+
+            </ul>
+
+            <!-- Right Section -->
+            <div class="login-section">
+                <a href="login.html">Login</a>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+
+
+    <div class="mreg-wrapper">
+        <div class="mreg-card">
+
+            <h2 style="position: relative; bottom: 25px;">
+                Book Appointment
+            </h2>
+
+
+            <form class="mreg-form" method="POST">
+
+                <!-- Name -->
+                <div class="mreg-group">
+                    <label class="mreg-label">Your Name *</label>
+
+                    <input type="text" class="mreg-input" name="name" placeholder="Your Name">
+
+                </div>
+
+                <!-- Email -->
+                <div class="mreg-group">
+                    <label class="mreg-label">Email Address *</label>
+
+                    <input type="email" class="mreg-input" name="email" placeholder="Your Email">
+
+                </div>
+
+                <!-- Phone -->
+                <div class="mreg-group">
+                    <label class="mreg-label">Phone Number *</label>
+                    <input type="text" class="mreg-input" name="phone" placeholder="Phone Number" required>
+                </div>
+
+                <!-- Date -->
+                <div class="mreg-group">
+                    <label class="mreg-label">Appointment Date *</label>
+                    <input type="date" class="mreg-input" name="date" required>
+                </div>
+
+                <!-- Time -->
+                <div class="mreg-group" style="margin-bottom: 30px;">
+                    <label class="mreg-label">Appointment Time *</label>
+                    <input type="time" class="mreg-input" name="time" required>
+                </div>
+
+                <a type="submit" class="mreg-submit" href="thankyou.html" 
+                    onclick="return confirm('Are you sure you want to confirm this booking?');">
+
+                    Confirm Booking
+
+                </a>
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <footer class="model-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h4>Social Media</h4>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="rankings.html">Ranking</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Inside the Industry</h4>
+                <ul>
+                    <li><a href="model.html">Models</a></li>
+                    <li><a href="creatives.html">Creatives</a></li>
+                    <li><a href="fashion.html">Fashion</a></li>
+                    <li><a href="beauty.html">Beauty</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Model Website. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cursor-effect.js"></script>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById("lightbox").style.display = "flex";
+            document.getElementById("lightbox-img").src = src;
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
