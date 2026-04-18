@@ -54,37 +54,19 @@
 
       <h2 class="contact-title">Contact us</h2>
       <hr>
-
-      <!-- Display Django messages -->
-      {% if messages %}
-      <div class="messages-container">
-        {% for message in messages %}
-        <p class="alert alert-{{ message.tags }}" style="
-               padding: 15px 0;
-               font-size: 16px;
-               background-color: aquamarine;
-               color: green;
-               margin: 5px 0;
-              padding-left: 15px;               
-           ">
-          {{ message }}
-        </p>
-        {% endfor %}
-      </div>
-      {% endif %}
-
       <form class="contact-form" method="post">
-        {% csrf_token %}
 
         <!-- Name -->
         <div class="form-row">
           <label>Your Name</label>
-          {{ form.name }}
+          <input type="text" class="mreg-input" name="name" value="Enter Name" required>
+
         </div>
 
         <div class="form-row">
           <label>Your E-mail address</label>
-          {{ form.email }}
+          <input type="text" class="mreg-input" name="name" value="Enter E-mail id" required>
+
         </div>
 
         <!-- Subject -->
