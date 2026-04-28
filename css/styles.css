@@ -14,6 +14,11 @@ a {
   position: relative; /* needed for the underline effect */
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .col-md-3 {
     width: 33.33%;
 }
@@ -41,6 +46,7 @@ a {
   display: flex;
   gap: 30px;
   margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 /* COLUMN (4 per row) */
@@ -90,11 +96,8 @@ body {
   margin-right: 60px;
   font-size: 35px;
   font-weight: bold;
-  position: relative;
-  left: 78px;
   text-decoration: none;
   color: #000;
-
 }
 
 .menu-icon-cls {
@@ -111,8 +114,8 @@ body {
   display: flex;
   list-style: none;
   gap: 25px;
-  position: relative;
-  right: 5%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu li a {
@@ -129,8 +132,7 @@ body {
 }
 
 .login-section {
-  position: relative;
-  right: 80px;
+  white-space: nowrap;
 }
 
 .login-section a {
@@ -206,12 +208,12 @@ body {
   background-color: #fff;
 }
 
-/* Image */
 .slider {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   background: #fff;
+  width: 100%;
 }
 
 /* Feature slide */
@@ -740,6 +742,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 16px 24px;
+  width: 100%;
   /* row-gap 16px, column-gap 24px */
 }
 
@@ -785,7 +788,7 @@ body {
 
 .item-inner {
   background: #d2d0ca;
-  width: 125px;
+  flex: 1;
 }
 
 .discover-list-text {
@@ -1079,8 +1082,6 @@ body {
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 20px;
-  position: relative;
-  top: -70px;
 }
 
 .inspired-text p {
@@ -1088,8 +1089,6 @@ body {
   line-height: 1.7;
   color: #444;
   max-width: 480px;
-  position: relative;
-  bottom: 50px;
 }
 
 /* RIGHT VISUAL */
@@ -1186,6 +1185,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
+  width: 100%;
 }
 
 .stat-item {
@@ -1435,6 +1435,7 @@ hr {
 
 .creative-image {
   width: 100%;
+  max-width: 1200px;
 }
 
 .editorial-titel {
@@ -1801,4 +1802,79 @@ hr {
 .model-book-btn:active {
   transform: translateY(0);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===============================
+   RESPONSIVE MEDIA QUERIES
+================================ */
+
+@media (max-width: 1200px) {
+    .container, .pro-container, .discover-section, .contact-container, .mreg-card {
+        max-width: 95%;
+    }
+    .discover-list { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 992px) {
+    .navbar { padding: 15px 20px; }
+    .logo { margin-right: 20px; font-size: 28px; }
+    .menu { gap: 15px; }
+    
+    .pro-container { grid-template-columns: 1fr; }
+    .feature-container { grid-template-columns: 1fr; }
+    
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .discover-list { grid-template-columns: repeat(2, 1fr); }
+    
+    .model-detail-container { flex-direction: column; }
+    .model-detail-image, .model-detail-info { width: 100%; }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .menu { justify-content: center; margin-bottom: 10px; }
+    .login-section { margin-top: 10px; }
+    
+    .feature-title { font-size: 32px; }
+    .trending-title, .fashion-news-title, .mdc-social h2, .discover-header h2, .models-rankings h1 {
+        font-size: 28px;
+    }
+    
+    .row, .mreg-row { flex-direction: column; gap: 20px; }
+    .col, .col-md-3, .col-md-4, .col-md-6 { width: 100%; }
+    
+    .form-row { grid-template-columns: 1fr; }
+    .form-row label { border-bottom: none; }
+    
+    .nav-arrow { display: none; } /* Arrows often overlap on mobile */
+    
+    .mdc-card { min-width: 80%; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    
+    .model-info-grid { grid-template-columns: 1fr; }
+    
+    .footer-container { grid-template-columns: 1fr; text-align: center; }
+    .footer-social { left: 0; margin: 0 auto; justify-content: center; display: flex; gap: 15px; }
+    
+    .be-inspired .container { flex-direction: column; gap: 30px; }
+    .inspired-text h2 { font-size: 30px; }
+}
+
+@media (max-width: 480px) {
+    .discover-list { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: 1fr; }
+    
+    .feature-section { padding-top: 180px; } /* Space for stacked header */
+    
+    .feature-title { font-size: 24px; }
+    
+    .mreg-card { padding: 100px 15px 20px; }
+    
+    .video-popup video { height: auto; max-height: 80vh; }
+    
+    .trend-card { min-width: 100%; }
 }
